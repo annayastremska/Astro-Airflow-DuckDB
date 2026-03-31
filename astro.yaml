@@ -1,0 +1,9 @@
+# astro.yaml
+project_name: astro_airflow
+runtime: "7.0.0"
+
+mounts:
+  - source: ./duckdb_result
+    target: /usr/local/airflow/duckdb_result
+  - source: ./include/telephony_data
+    target: /usr/local/airflow/telephony_data

@@ -1,0 +1,6 @@
+services:
+  scheduler:
+    volumes:
+      - ./data:/usr/local/airflow/data
+      - ./duckdb_result:/usr/local/airflow/duckdb_result
+      - ./include/telephony_data:/usr/local/airflow/telephony_data
