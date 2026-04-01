@@ -227,20 +227,6 @@ The DAG uses `catchup=True` and a deterministic `start_date` to support safe bac
 │   └── support_calls.duckdb         # Output database
 └── README.md
 ```
-
----
-
-## Evaluation Checklist
-
-| Criterion | Status |
-|---|---|
-| Hourly schedule + clear task structure | ✅ |
-| Airflow Connection for MySQL (no hardcoded credentials) | ✅ |
-| Incremental load with watermark | ✅ |
-| JSON loading, validation, error handling | ✅ |
-| Correct joins, no duplicates or dropped rows | ✅ |
-| DuckDB upsert on `call_id` | ✅ |
-| Data quality checks | ✅ |
 | Observability (row counts, rejected files) | ✅ |
 | Backfill-friendly (`catchup`, `start_date`) | ✅ |
 | Retry + alert strategy | ✅ |
